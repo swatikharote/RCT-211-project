@@ -9,7 +9,6 @@ export const HomePage = () => {
     return (
 
         <Box>
-            <Navbar />
             <Sidebar />
             <Index />
             <Footer />
