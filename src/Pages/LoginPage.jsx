@@ -91,7 +91,7 @@ const LoginPage = () => {
                                     _hover={{
                                         bg: 'blue.500',
                                     }}>
-                                    Sign in
+                                    Login
                                 </Button >
                             </Stack>
                         </form>
