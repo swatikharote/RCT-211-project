@@ -1,7 +1,22 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
 
 export const Sidebar = () => {
   return (
-    <div>Sidebar</div>
+    <DIV>
+
+    </DIV>
   )
 }
+
+
+const DIV = styled.div`
+width:40%;
+height:auto;
+border:1px solid black;
+
+
+
+
+
+`

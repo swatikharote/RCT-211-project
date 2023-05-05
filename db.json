@@ -1,0 +1,87 @@
+{
+    "destinations": [
+        {
+            "destination": "Goa",
+            "details": "",
+            "id": "111",
+            "image": ""
+        },
+        {
+            "destination": "maldives",
+            "details": "",
+            "id": "222",
+            "image": ""
+        },
+        {
+            "destination": "indore",
+            "details": "",
+            "id": "333",
+            "image": ""
+        }
+    ],
+    "accomodation": [
+        {
+            "type": "Villa",
+            "price": 200,
+            "loaction": "goa",
+            "id": 1,
+            "destination_id": 123
+        },
+        {
+            "type": "cottage",
+            "price": 200,
+            "loaction": "goa",
+            "id": 1,
+            "destination_id": 123
+        },
+        {
+            "type": "hotel",
+            "price": 200,
+            "loaction": "goa",
+            "id": 1,
+            "destination_id": 123
+        },
+        {
+            "type": "Villa",
+            "price": 200,
+            "loaction": "goa",
+            "id": 1,
+            "destination_id": 222
+        },
+        {
+            "type": "cottage",
+            "price": 200,
+            "loaction": "goa",
+            "id": 1,
+            "destination_id": 222
+        },
+        {
+            "type": "hotel",
+            "price": 200,
+            "loaction": "goa",
+            "id": 1,
+            "destination_id": 222
+        },
+        {
+            "type": "Villa",
+            "price": 200,
+            "loaction": "goa",
+            "id": 1,
+            "destination_id": 333
+        },
+        {
+            "type": "cottage",
+            "price": 200,
+            "loaction": "goa",
+            "id": 1,
+            "destination_id": 333
+        },
+        {
+            "type": "hotel",
+            "price": 200,
+            "loaction": "goa",
+            "id": 1,
+            "destination_id": 333
+        }
+    ]
+}
