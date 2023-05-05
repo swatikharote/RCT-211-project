@@ -10,7 +10,7 @@ export const Footer = () => {
         <div id="footer-filter">
            
             <div id="footer-top">
-                <div class="top-list">
+                <div className="top-list">
                     <ul>
                       <p>Support</p>
                         <li><a href="#">Help Center</a></li>
@@ -22,7 +22,7 @@ export const Footer = () => {
                         
                     </ul>
                 </div>
-                <div class="top-list">
+                <div className="top-list">
                     <ul>
                     <p>Community</p>
                         <li><a href="#">Disaster relief housing</a></li>
@@ -31,7 +31,7 @@ export const Footer = () => {
                         <li><a href="#">Combating discrimination</a></li>
                     </ul>
                 </div>
-                <div class="top-list">
+                <div className="top-list">
                     <ul>
                       <p>Housing</p>
                         <li><a href="#">Try housing</a></li>
@@ -41,7 +41,7 @@ export const Footer = () => {
                         <li><a href="#">How to homeowner responsibly</a></li>
                     </ul>
                 </div>
-                <div class="top-list">
+                <div className="top-list">
                     <ul>
                     <p>About</p>
                         <li><a href="#">Newsroom</a></li>
@@ -54,7 +54,7 @@ export const Footer = () => {
                 </div>
     
             </div>
-            <hr width='88%'></hr>
+            <hr></hr>
             <div id='footer-bottom'>
             <div id="copyright">
             <span>© 2023 SafeTravel.inc. |</span>
@@ -132,7 +132,7 @@ p{
     line-height: 23px;
     flex-direction: row;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
 
 }
 
@@ -169,7 +169,7 @@ p{
     height: 33px;
     text-align: left;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 35px;
     background-color: #8EC3B0;
     color: #223143;
     font-size: 13px;
@@ -195,6 +195,7 @@ hr{
         height: 0.5px;
         background-color: rgb(31, 63, 107);
         border: none;
+     
     
 }
 @media all and (max-width: 450px){

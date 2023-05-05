@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+<<<<<<< Updated upstream
 import { Navbar } from '../Components/Navbar'
 import { Footer } from '../Components/Footer'
 import { Sidebar } from '../Components/Sidebar'
@@ -36,6 +37,31 @@ export const HomePage = () => {
                 <Index />
             </Flex>
 
+=======
+import { Footer } from '../Components/Footer'
+import { Sidebar } from '../Components/Sidebar'
+import { Index } from '../Components/Index'
+import { Box, Button, Flex, Text } from '@chakra-ui/react'
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
+
+
+export const HomePage = () => {
+    
+
+   
+    return (
+
+        <Box>
+            <Flex pl='2px' justifyContent={'space-between'}>
+                <Box width={'26%'}>
+                    <Sidebar/>
+                </Box>
+                <Box width={'73%'}>
+                    <Index/>
+                </Box>
+            </Flex>
+>>>>>>> Stashed changes
             <Footer />
         </Box>
 

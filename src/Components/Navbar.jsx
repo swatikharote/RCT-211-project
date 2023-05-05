@@ -13,7 +13,7 @@ export const Navbar = () => {
 
     ]
     return (
-        <Box width={"auto"} position={"sticky"} p={"10px"} background={"#c4d3e8"}>
+        <Box width={"auto"} p={"10px"} background={"#c4d3e8"}>
             <Flex justifyContent={"space-around"} alignItems={"center"} >
                 <Link to="/" ><Image w={'60px'} src="./safe_travel_logo.png" /></Link>
                 {link.map((item) => (
