@@ -3,15 +3,12 @@ import styled from 'styled-components';
 
 export const Sidebar = () => {
   return (
-<<<<<<< Updated upstream
+
     <DIV>
 
     </DIV>
-=======
-    <div>
-      <img src="https://cf.bstatic.com/images/hotel/max300/429/429392564.jpg" alt="" width={'100%'}/>
-    </div>
->>>>>>> Stashed changes
+
+
   )
 }
 
