@@ -10,6 +10,9 @@ import SignUp from './SignUp'
 import Support from './Support'
 import WhishList from './WhishList'
 import { PrivateRoute } from '../Components/PrivateRoutes'
+import Admin from './Admin'
+import AddProduct from './AddProduct'
+import Destination from './Destination'
 
 const MainRoutes = () => {
     return (
@@ -24,7 +27,9 @@ const MainRoutes = () => {
                 <Route path='/signup' element={<SignUp />} />
                 <Route path='/support' element={<Support />} />
                 <Route path='/wishlist' element={<PrivateRoute><WhishList /></PrivateRoute>} />
-
+                <Route path='/admin' element={<Admin />} />
+                <Route path='/add-product' element={<AddProduct />} />
+                <Route path='/destination' element={<Destination/>} />
             </Routes>
         </div>
     )
