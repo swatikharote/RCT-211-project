@@ -5,7 +5,7 @@ import { Footer } from '../Components/Footer'
 import { Sidebar } from '../Components/Sidebar'
 import { Index } from '../Components/Index'
 import { Box, Image, Flex } from '@chakra-ui/react'
-import { ImageSlider } from '../Components/ImageSlider'
+
 import axios from 'axios'
 
 
@@ -13,14 +13,11 @@ import axios from 'axios'
 
 
 
-export const HomePage = () => {
-    const [data, setData] = useState([]);
 
-    useEffect(() => {
-        axios.get("http://localhost:8080/destinations").then((res) => {
-            console.log(res.data)
-        })
-    }, [])
+export const HomePage = () => {
+
+
+
 
 
 
@@ -31,10 +28,11 @@ export const HomePage = () => {
 
         <Box h={"100vh"}>
 
-            {/* <ImageSlider /> */}
+
             <Flex>
                 <Sidebar />
                 <Index />
+
             </Flex>
 
             <Footer />

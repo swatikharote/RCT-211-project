@@ -11,8 +11,9 @@ import Support from './Support'
 import WhishList from './WhishList'
 import { PrivateRoute } from '../Components/PrivateRoutes'
 import Admin from './Admin'
-import AddProduct from './AddProduct'
-import Destination from './Destination'
+import AddProduct from './AddProduct';
+import { Destination } from './Destination'
+
 
 const MainRoutes = () => {
     return (
@@ -29,7 +30,7 @@ const MainRoutes = () => {
                 <Route path='/wishlist' element={<PrivateRoute><WhishList /></PrivateRoute>} />
                 <Route path='/admin' element={<Admin />} />
                 <Route path='/add-product' element={<AddProduct />} />
-                <Route path='/destination' element={<Destination/>} />
+                <Route path='/destination' element={<Destination />} />
             </Routes>
         </div>
     )
