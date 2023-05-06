@@ -1,9 +1,24 @@
 import React from 'react'
+import DestinationList from './DestinationList'
+import { ImageSlider } from './ImageSlider'
+import { ButtonComp } from './Button'
+import { Link, useNavigate } from 'react-router-dom'
+import { Button } from '@chakra-ui/react'
 
 export const Index = () => {
+  const navigate = useNavigate()
+
+  const handleNavigate = () => {
+    navigate("/destination")
+  }
   return (
     <div>
-    <img src="https://cf.bstatic.com/images/hotel/max300/121/121505318.jpg" width={'100%'} alt="" />
+      <ImageSlider />
+      <DestinationList />
+      {/* <ButtonComp text={"Show more"} color={"pink"} onClick={handleNavigate} /> */}
+      <Button onClick={handleNavigate} >Show more</Button>
+
+
     </div>
   )
 }

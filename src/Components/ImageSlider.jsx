@@ -1,34 +1,49 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import { Box, Image } from '@chakra-ui/react';
-const images = ["https://media.istockphoto.com/id/516449022/photo/lady-with-kayak.jpg?s=612x612&w=0&k=20&c=Yp-rzpmY_hbhpbTE38z6toouRKW-lAEN-ZvuWvH8kKE="
-    , "https://media.istockphoto.com/id/1096035138/photo/beautiful-young-couple-relaxing-after-hiking-and-taking-a-break.jpg?s=612x612&w=0&k=20&c=iwNan7K7gbiIl2unv-9EuE5Yej-h_l1OrLNMel0husU="
-    , "https://media.istockphoto.com/id/1142877679/photo/young-people-enjoying-whitewater-river-rafting-in-river-ganges-rishikesh-india.jpg?s=612x612&w=0&k=20&c=sskxkTsmcseiloBTkv7UGTtb2ZjPTBi-q2aiY83zGXQ="
-    , "https://media.istockphoto.com/id/1142877679/photo/young-people-enjoying-whitewater-river-rafting-in-river-ganges-rishikesh-india.jpg?s=612x612&w=0&k=20&c=sskxkTsmcseiloBTkv7UGTtb2ZjPTBi-q2aiY83zGXQ="
-    , "https://media.istockphoto.com/id/1031430214/photo/young-woman-kayaking-through-the-backwaters-of-monroe-island.jpg?s=612x612&w=0&k=20&c=kbv2s1kknMzJgk8Nd-W2VNIf0AFx48YtCqygtI3Ppos="]
+import styled from "styled-components";
+
+
 
 export const ImageSlider = () => {
-    const [imgInx, setImgInx] = useState(0);
+
+
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+    const images = ["https://media.istockphoto.com/id/173096906/photo/a-lounge-beside-the-pool-with-cocktails-on-table.jpg?s=612x612&w=0&k=20&c=NbLFIVE7_vp_pbivo-hZZxMLqKS7V5KXo065_NpkX-A="
+        , "https://i.pinimg.com/originals/8a/42/c3/8a42c34cd06cdf879436f74ef8df8d6a.jpg "
+
+        , "https://static.vecteezy.com/system/resources/previews/012/168/187/original/beautiful-sunset-on-the-beach-with-palm-tree-for-travel-and-vacation-free-photo.JPG"
+        , "https://static.vecteezy.com/system/resources/previews/012/168/187/original/beautiful-sunset-on-the-beach-with-palm-tree-for-travel-and-vacation-free-photo.JPG"]
+
 
     useEffect(() => {
-
-        setInterval(() => {
-            if (imgInx > images.length - 1) {
-                setImgInx(0)
-
-            } else {
-                setImgInx((prev) => prev + 1)
-
-            }
+        const intervalId = setInterval(() => {
+            setCurrentSlide((currentSlide + 1) % images.length);
         }, 3000);
-
-
-
-    }, [imgInx])
+        return () => clearInterval(intervalId);
+    }, [currentSlide, 3000, images.length]);
 
     return (
-        <Box w={"800px"}>
-            <Image src={images[imgInx]} alt='test' />
-        </Box>
+        <DIV className="slideshow">
+            <img src={images[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
+        </DIV>
     )
 }
+
+const DIV = styled.div`
+
+width :98%;
+
+margin:auto;
+margin-top:10px;
+
+
+img{
+    width:100%;
+    height: 300px;
+    border-radius:10px;
+  
+    
+}
+`
