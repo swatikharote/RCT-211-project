@@ -1,14 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react'
-import { getDestination } from '../Redux/productReducer/action'
-import { useDispatch, useSelector } from 'react-redux'
-import { DataArrayOutlined } from '@mui/icons-material';
-import styled from "styled-components";
-import { Box, Flex } from '@chakra-ui/react';
-import { Link, useSearchParams } from 'react-router-dom';
-import { SearchBar } from '../Components/SearchBar';
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+import { getDestination } from '../Redux/productReducer/action';
+import { Box, Button, Flex } from '@chakra-ui/react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-export const Destination = () => {
-const [searchParams]=useSearchParams()
+const AdminDestination = () => {
     const data = useSelector((store) => store.productReducer.products);
     const dispatch = useDispatch()
 
@@ -38,12 +35,15 @@ const [searchParams]=useSearchParams()
                 {data.map((e) => {
                     return (
                         <div key={e.id}>
-                            <Link to={`/housing/${e.id}`}><img src={e.image} />
-                                <h1>{e.destination}</h1>
-                                <p>{e.details}</p>
-                            </Link>
-
-
+                            <img src={e.image} />
+                            <h2>{e.destination}</h2>
+                            <p>{e.details}</p>
+                            <Flex justifyContent={'space-between'}>
+                                <Button _hover={{bg:'green.400'}}>
+                                    <Link to={`/edit/${e.id}`}>Edit</Link>
+                                    </Button>
+                                <Button _hover={{bg:'red'}}>Delete</Button>
+                            </Flex>
 
                         </div>
                     )
@@ -71,7 +71,7 @@ padding:10px;}
 
 .img{
     width:100%;
-    padding:5px;    
+    padding:5px;
 
 }
 @media  all and (max-width: 425.5px){
@@ -83,3 +83,4 @@ padding:10px;}
 
 `
 
+export default AdminDestination

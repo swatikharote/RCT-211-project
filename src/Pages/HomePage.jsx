@@ -16,26 +16,21 @@ import axios from 'axios'
 
 export const HomePage = () => {
 
-
-
-
-
-
-
-
-
     return (
 
-        <Box h={"100vh"}>
-
-
-            <Flex>
+        <Box>
+            <Flex width={'98%'} margin={'auto'}>
+                <Box width={'18%'}>
                 <Sidebar />
-                <Index />
+                </Box>
+                <Box width={'81%'}>
+                <Index/>
+                </Box>
+                
 
             </Flex>
 
-            <Footer />
+            {/* <Footer /> */}
         </Box>
 
     )

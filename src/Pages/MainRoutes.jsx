@@ -13,6 +13,8 @@ import { PrivateRoute } from '../Components/PrivateRoutes'
 import Admin from './Admin'
 import AddProduct from './AddProduct';
 import { Destination } from './Destination'
+import AdminDestination from './AdminDestination'
+import EditPage from './EditPage'
 
 
 const MainRoutes = () => {
@@ -31,7 +33,13 @@ const MainRoutes = () => {
                 <Route path='/admin' element={<Admin />} />
                 <Route path='/add-product' element={<AddProduct />} />
                 <Route path='/destination' element={<Destination />} />
+
                 <Route path='/housing/:id' element={<Housing />} />
+
+                <Route path='/admin-destination' element={<AdminDestination/>}/>
+                <Route path='/edit/:id' element={<EditPage/>}/>
+                <Route path='*' element={<h1>Page Not Found</h1>}/>
+
             </Routes>
         </div>
     )

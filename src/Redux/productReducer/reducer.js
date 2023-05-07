@@ -21,7 +21,7 @@ switch (type) {
         return{...state ,isLoading:false,products:payload}
     }
     case POST_PRODUCT_SUCCESS:{
-        return{...state ,isLoading:false}
+        return{...state , isLoading:false}
     }
     case PATCH_PRODUCT_SUCCESS:{
         return{...state ,isLoading:false}

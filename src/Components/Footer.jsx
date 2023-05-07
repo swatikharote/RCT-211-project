@@ -70,6 +70,9 @@ export const Footer = () => {
   )
 }
 const FOOTER=styled.footer`
+  
+    margin-top:30px;
+  
   #footer-option {
     display: flex;
     width: 515px;

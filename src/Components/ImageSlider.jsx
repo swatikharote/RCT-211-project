@@ -36,7 +36,7 @@ const DIV = styled.div`
 width :98%;
 
 margin:auto;
-margin-top:10px;
+margin-top:35px;
 
 
 img{

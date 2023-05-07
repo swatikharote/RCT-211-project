@@ -10,7 +10,7 @@ import { ButtonComp } from './Button';
 const DestinationList = () => {
   const data = useSelector((store) => store.productReducer.products);
   const dispatch = useDispatch()
-  console.log(data)
+ 
   let limit = 6;
 
 
@@ -46,6 +46,11 @@ grid-template-columns:repeat(3,1fr);
 grid-template-rows:auto;
 gap:8px;
  
-
+@media  all and (min-width:222px) and (max-width: 424px){
+  grid-template-columns: repeat(1,1fr);
+}
+@media  all and (min-width:426px) and (max-width: 768px){
+  grid-template-columns: repeat(2,1fr);
+}
 
 `

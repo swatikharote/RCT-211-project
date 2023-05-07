@@ -31,27 +31,25 @@ const AdminSideBar = () => {
           <span>Dashboard</span>
         </li>
         <p className="title">LISTS</p>
-        <Link to="/users" style={{ textDecoration: "none" }}>
           <li>
             <PersonOutlineIcon className="icon" />
             <span>Users</span>
           </li>
-        </Link>
-        <Link to='/add-product'>
+        <Link to='/admin-destination'>
           <li>
             <StoreIcon className="icon" />
-            <span>Products</span>
+            <span>Destinations</span>
           </li>
         </Link>
         <Link to='/add-product'>
         <li>
           <CreditCardIcon className="icon" />
-          <span>Add Products</span>
+          <span>Add Destination</span>
         </li>
         </Link>
         <li>
           <LocalShippingIcon className="icon" />
-          <span>Update Products</span>
+          <span>Update Destination</span>
         </li>
         <p className="title">USEFUL</p>
         <li>

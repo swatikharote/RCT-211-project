@@ -1,62 +1,71 @@
-import { Flex } from '@chakra-ui/react'
+import { Box, Button, Flex, Input, Text } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import AdminSideBar from '../Components/AdminSideBar'
 import styled from 'styled-components'
+import { useDispatch } from 'react-redux'
+import { addDestination } from '../Redux/productReducer/action'
 
 const AddProduct = () => {
-    const initialState={
-        name:"",
-        image:"",
-        location:"",
-        price:"",
-        category:"",
-        gender:""
-    
-      }
-      const [product, setProduct]=useState(initialState)
-    
-      const handleChange=(e)=>{
-    const {name, value}=e.target
-    setProduct((prev)=>{
-      return {...prev, [name]: name==='price' ? +value : value}
-    })
-      }
+      
+      const [destination, setDestination]=useState('')
+      const [image, setImage]=useState('')
+      const [details, setDetails]=useState('')
+
+    const dispatch=useDispatch()
+
+      
+      
       const handleSubmit=(e)=>{
         e.preventDefault()
-        console.log(product)
+        const data={
+          destination,
+          image,
+          details
+        }
+        console.log(data)
+        dispatch(addDestination(data))
+        setDestination('')
+        setImage('')
+        setDetails('')
         
-        setProduct(initialState)
       }
   return (
-   <Flex>
-    <AdminSideBar/>
+   <Flex mt={'10px'}>
+    <Box width={'20%'}>
+      <AdminSideBar/>
+    </Box>
+    <Box width={'80%'}
+     bgImage={'https://images.pexels.com/photos/7412094/pexels-photo-7412094.jpeg?auto=compress&cs=tinysrgb&w=1150'}>
+      
+      <Text fontSize={'4xl'}
+       color={'green.700'}
+        mt={'60px'}
+         textAlign={'center'}>ADD DESTINATION</Text>
     <DIV>
       <form onSubmit={handleSubmit}>
-        <input type="text" placeholder='Product Name'
-        name='name' value={product.name} onChange={(e)=>handleChange(e)} />
-        <input type="text" placeholder='Product Image'
-        name='image' value={product.image} onChange={(e)=>handleChange(e)} />
-        <input type="text" placeholder='Product Brand'
-        name='location' value={product.location} onChange={(e)=>handleChange(e)} />
-        <input type="number" placeholder='Price'
-        name='price' value={product.price} onChange={(e)=>handleChange(e)} />
-        <select name="category" value={product.category}
-         onChange={(e)=>handleChange(e)} >
-            <option value="">Select Category</option>
-            <option value="top-wear">Top Wear</option>
-            <option value="bottom-wear">Bottom Wear</option>
-            <option value="shoes">Shoes</option>
-        </select>
-        <select name="gender" value={product.gender}
-         onChange={(e)=>handleChange(e)} >
-            <option value="">Select Gender</option>
-            <option value="male">Mens</option>
-            <option value="female">Womens</option>
-            <option value="kids">Kids</option>
-        </select>
-        <button type='submit'>ADD PRODUCT</button>
+      
+        <Input variant={'outline'}
+         _placeholder={{ opacity: 1, color: '#000000' }}
+           type="text" placeholder='Destination Name'
+         value={destination}
+         onChange={(e)=>setDestination(e.target.value)} />
+        <Input _placeholder={{ opacity: 1, color: '#000000' }}
+         type="text"
+          placeholder='Destination Image'
+        value={image}
+         onChange={(e)=>setImage(e.target.value)} />
+        <Input _placeholder={{ opacity: 1, color: '#000000' }}
+         type="text"
+          placeholder='Destination Details'
+        value={details} onChange={(e)=>setDetails(e.target.value)} />
+        
+        <Button color={'#000000'}
+         _hover={{bg:'green', color:'white'}}
+          variant='outline' colorScheme='gray'
+           type='submit'>ADD DESTINATION</Button>
       </form>
     </DIV>
+    </Box>
    </Flex>
   )
 }
@@ -64,33 +73,32 @@ const AddProduct = () => {
 export default AddProduct
 
 const DIV=styled.div`
-width: 330px;
+width: 430px;
 margin: auto;
 border: 1px solid gray;
 padding: 31px;
+margin-top: 50px;
+background: white;
+opacity: 0.6;
+
+
 
 form{
   display:flex;
   flex-direction:column;
 }
 input{
-  height: 23px;
+  height: 40px;
   width: 100%;
   font-size: larger;
-  margin-top: 13px;
+  margin-top: 15px;
   border: 1px solid black;
 }
-select{
-  height: 28px;
-  width: 100%;
-  font-size: large;
-  margin-top: 13px;
-  border: 1px solid black;
-}
+
 button {
-  margin-top: 10px;
-  width: 102.5%;
-  height: 28px;
+  margin-top: 20px;
+  width: 100%;
+  height: 45px;
   border: none;
 }
 `

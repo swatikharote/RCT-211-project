@@ -16,7 +16,7 @@ export const Index = () => {
       <ImageSlider />
       <DestinationList />
       {/* <ButtonComp text={"Show more"} color={"pink"} onClick={handleNavigate} /> */}
-      <Button onClick={handleNavigate} >Show more</Button>
+      <Button bg={'red.200'} mt={'20px'}onClick={handleNavigate} _hover={{background:'#E41749', color:'white'}} >Show more</Button>
 
 
     </div>

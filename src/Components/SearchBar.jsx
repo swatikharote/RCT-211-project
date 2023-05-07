@@ -6,18 +6,19 @@ import { getDestination } from '../Redux/productReducer/action';
 
 export const SearchBar = () => {
     const [search, setSearch] = useState("")
-    const [searchParams] = useSearchParams()
-    let ref = useRef();
     const dispatch = useDispatch()
+    let ref = useRef();
 
 
 
-    let paramsObj = {
+    let paramObj = {
         params: {
             q: search && search
         }
 
     }
+
+       
 
 
     useEffect(() => {
@@ -25,7 +26,7 @@ export const SearchBar = () => {
             clearTimeout(ref.current)
         }
         ref.current = setTimeout(() => {
-            dispatch(getDestination(paramsObj))
+            dispatch(getDestination(paramObj))
 
         }, 1000)
     }, [search])
