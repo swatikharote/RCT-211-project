@@ -16,6 +16,7 @@ export const SearchBar = () => {
         params: {
             q: search && search
         }
+
     }
 
 

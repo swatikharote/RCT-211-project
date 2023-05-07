@@ -106,6 +106,7 @@
             "destination_id": 11,
             "address": "789 Oak Street, Goa",
             "price": 120,
+            "type": "resort",
             "rating": 4.8,
             "guestAllowed": 3,
             "amenities": [

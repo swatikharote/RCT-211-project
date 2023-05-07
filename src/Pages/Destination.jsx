@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { DataArrayOutlined } from '@mui/icons-material';
 import styled from "styled-components";
 import { Box, Flex } from '@chakra-ui/react';
-import { useSearchParams } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { SearchBar } from '../Components/SearchBar';
 
 export const Destination = () => {
@@ -42,9 +42,10 @@ export const Destination = () => {
                 {data.map((e) => {
                     return (
                         <div key={e.id}>
-                            <img src={e.image} />
-                            <h1>{e.destination}</h1>
-                            <p>{e.details}</p>
+                            <Link to={`/housing/${e.id}`}><img src={e.image} />
+                                <h1>{e.destination}</h1>
+                                <p>{e.details}</p>
+                            </Link>
 
 
 
