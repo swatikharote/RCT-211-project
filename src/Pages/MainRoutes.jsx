@@ -31,6 +31,7 @@ const MainRoutes = () => {
                 <Route path='/admin' element={<Admin />} />
                 <Route path='/add-product' element={<AddProduct />} />
                 <Route path='/destination' element={<Destination />} />
+                <Route path='/housing/:id' element={<Housing />} />
             </Routes>
         </div>
     )

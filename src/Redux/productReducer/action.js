@@ -17,3 +17,15 @@ export const getDestination = (limit, paramObj) => (dispatch) => {
 
 }
 
+
+
+export const getAccomodation = (id) => (dispatch) => {
+    dispatch({ type: PRODUCT_REQUEST })
+
+    axios.get(`https://real-cyan-gecko-wear.cyclic.app/accommodations?destination_id=${id}`).then((res) => {
+        console.log(res.data);
+        dispatch({ type: GET_PRODUCT_SUCCESS, payload: res.data })
+    }).catch(() => {
+        dispatch({ type: PRODUCT_FAILURE })
+    })
+}
