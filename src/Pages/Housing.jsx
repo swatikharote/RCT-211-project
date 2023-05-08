@@ -41,7 +41,7 @@ const Housing = () => {
         <Box w={"22%"} >
           <HousingSidebar />
         </Box>
-        <Box w={"88%"}>
+        <Box w={"78%"}>
 
           <DIV>
 
@@ -67,4 +67,12 @@ display:grid;
 grid-template-columns:repeat(3,1fr);
 gap: 10px;
 grid-template-rows:auto;
+
+@media  all and (max-width: 425.5px){
+  grid-template-columns: repeat(1,1fr);
+}
+@media  all and (min-width:426px) and  (max-width: 768px){
+  grid-template-columns: repeat(2,1fr);
+}
+
 `

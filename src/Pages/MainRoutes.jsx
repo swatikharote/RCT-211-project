@@ -29,7 +29,7 @@ const MainRoutes = () => {
                 <Route path='/payment' element={<Payment />} />
                 <Route path='/signup' element={<SignUp />} />
                 <Route path='/support' element={<Support />} />
-                <Route path='/wishlist' element={<PrivateRoute><WhishList /></PrivateRoute>} />
+                <Route path='/wishlist' element={<WhishList />} />
                 <Route path='/admin' element={<Admin />} />
                 <Route path='/add-product' element={<AddProduct />} />
                 <Route path='/destination' element={<Destination />} />

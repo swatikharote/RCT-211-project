@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
-import { Box, Image } from '@chakra-ui/react';
 import styled from "styled-components";
 
 
@@ -22,7 +21,7 @@ export const ImageSlider = () => {
             setCurrentSlide((currentSlide + 1) % images.length);
         }, 3000);
         return () => clearInterval(intervalId);
-    }, [currentSlide, 3000, images.length]);
+    }, [currentSlide,  images.length]);
 
     return (
         <DIV className="slideshow">

@@ -79,7 +79,7 @@ border: 1px solid gray;
 padding: 31px;
 margin-top: 50px;
 background: white;
-opacity: 0.6;
+opacity: 0.7;
 
 
 
