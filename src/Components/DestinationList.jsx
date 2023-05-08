@@ -9,6 +9,7 @@ import { ButtonComp } from './Button';
 
 const DestinationList = () => {
   const data = useSelector((store) => store.productReducer.products);
+  
   const dispatch = useDispatch()
  
   let limit = 6;
@@ -19,6 +20,7 @@ const DestinationList = () => {
 
 
   }, [])
+
 
 
   return (

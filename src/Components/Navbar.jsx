@@ -10,6 +10,7 @@ export const Navbar = () => {
         { to: '/community', text: 'Community' },
         { to: '/login', text: 'Login' },
         { to: './signup', text: 'Providing Housing' }
+        
 
     ]
     return (

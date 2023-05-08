@@ -1,6 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux';
-import { useSearchParams } from 'react-router-dom';
 import { getDestination } from '../Redux/productReducer/action';
 
 
