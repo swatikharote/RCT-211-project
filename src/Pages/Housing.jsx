@@ -1,25 +1,37 @@
 import React, { useEffect } from 'react'
 import { getAccomodation } from '../Redux/productReducer/action'
-import { useParams } from 'react-router-dom'
+import { useParams, useSearchParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
 import { Box, Flex } from '@chakra-ui/react';
 
 import { HousingCard } from '../Components/HousingCard';
+import { HousingSidebar } from '../Components/HousingSidebar';
+
 
 const Housing = () => {
 
   const { id } = useParams();
   const dispatch = useDispatch()
+  const [searchParams] = useSearchParams()
   const data = useSelector((store) => store.productReducer.products)
 
-
+  let obj = {
+    params: {
+      ownerShip: searchParams.getAll("ownerShip"),
+      type: searchParams.getAll("type"),
+      _sort: searchParams.get("order") && "price",
+      _order: searchParams.get("order"),
+      _sort: searchParams.get("order") && "rating",
+      _order: searchParams.get("order")
+    }
+  }
 
   useEffect(() => {
 
-    dispatch(getAccomodation(id))
+    dispatch(getAccomodation(id, obj))
 
-  }, [])
+  }, [searchParams])
 
 
 
@@ -27,7 +39,7 @@ const Housing = () => {
     <>
       <Flex>
         <Box w={"22%"} >
-          sidebar
+          <HousingSidebar />
         </Box>
         <Box w={"88%"}>
 

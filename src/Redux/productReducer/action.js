@@ -17,10 +17,10 @@ export const getDestination = (limit, paramObj) => (dispatch) => {
 }
 
 
-export const getAccomodation = (id) => (dispatch) => {
+export const getAccomodation = (id, obj) => (dispatch) => {
     dispatch({ type: PRODUCT_REQUEST })
 
-    axios.get(`https://real-cyan-gecko-wear.cyclic.app/accommodations?destination_id=${id}`).then((res) => {
+    return axios.get(`https://real-cyan-gecko-wear.cyclic.app/accommodations?destination_id=${id}`, obj).then((res) => {
         console.log(res.data);
         dispatch({ type: GET_PRODUCT_SUCCESS, payload: res.data })
     }).catch(() => {
@@ -28,28 +28,29 @@ export const getAccomodation = (id) => (dispatch) => {
     })
 }
 
-export const addDestination=(newDestination)=>(dispatch)=>{
-    dispatch({type: PRODUCT_REQUEST})
+export const addDestination = (newDestination) => (dispatch) => {
+    dispatch({ type: PRODUCT_REQUEST })
     axios
-    .post("https://real-cyan-gecko-wear.cyclic.app/destinations", newDestination)
-    .then((res)=>{
-        dispatch({type: POST_PRODUCT_SUCCESS})
-    }).catch((error)=>{
-        console.log(error.response.data)
-        dispatch({type: PRODUCT_FAILURE})
-    })
+        .post("https://real-cyan-gecko-wear.cyclic.app/destinations", newDestination)
+        .then((res) => {
+            dispatch({ type: POST_PRODUCT_SUCCESS })
+        }).catch((error) => {
+            console.log(error.response.data)
+            dispatch({ type: PRODUCT_FAILURE })
+        })
 }
 
-export const editDestination=(id, data)=>(dispatch)=>{
-    dispatch({type: PRODUCT_REQUEST})
+export const editDestination = (id, data) => (dispatch) => {
+    dispatch({ type: PRODUCT_REQUEST })
     axios.
-    patch(`https://real-cyan-gecko-wear.cyclic.app/destinations/${id}`, data)
-    .then((res)=>{
-        dispatch({type: PATCH_PRODUCT_SUCCESS})
-    }).catch((err)=>{
-        console.log(err.response.data)
-        dispatch({type: PRODUCT_FAILURE
+        patch(`https://real-cyan-gecko-wear.cyclic.app/destinations/${id}`, data)
+        .then((res) => {
+            dispatch({ type: PATCH_PRODUCT_SUCCESS })
+        }).catch((err) => {
+            console.log(err.response.data)
+            dispatch({
+                type: PRODUCT_FAILURE
+            })
         })
-    })
 }
 
