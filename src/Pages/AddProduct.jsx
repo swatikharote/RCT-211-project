@@ -27,7 +27,7 @@ const AddProduct = () => {
         setDestination('')
         setImage('')
         setDetails('')
-        
+        alert('Destination Added')
       }
   return (
    <Flex mt={'10px'}>
