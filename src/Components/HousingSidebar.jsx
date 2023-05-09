@@ -11,17 +11,17 @@ export const HousingSidebar = () => {
     const initialType = searchParams.getAll("type")
     const [type, setType] = useState(initialType || "")
     // sort
-    const initSort = searchParams.get("order")
-    const [order, setOrder] = useState(initSort || "")
+    const initSort = searchParams.get("orderPrice")
+    const [orderPrice, setOrderPrice] = useState(initSort || "")
 
     useEffect(() => {
         let params = {
             ownerShip: ownerShip,
             type: type,
         }
-        order && (params.order = order)
+        orderPrice && (params.orderPrice = orderPrice)
         setSearchParam(params)
-    }, [ownerShip, type, order])
+    }, [ownerShip, type, orderPrice])
 
     // console.log(Ownership)
     const handleOwnerShip = (e) => {
@@ -51,10 +51,10 @@ export const HousingSidebar = () => {
 
 
     }
-    const handleSort = (e) => {
+    const handleSortPrice = (e) => {
         const { value } = e.target
-        setOrder(value)
-        console.log(order)
+        setOrderPrice(value)
+        // console.log(order)
     }
 
     return (
@@ -62,7 +62,7 @@ export const HousingSidebar = () => {
             <Box border='1px' borderColor="#c4d3e8" p={"10px"}>
 
 
-                <Text fontSize={20} >Filter by Ownership</Text>
+                <Text fontSize={20} p={"5px"}>Filter by Ownership</Text>
 
                 <Checkbox type='checkbox' value={"rent"} onChange={handleOwnerShip} checked={ownerShip.includes("rent")} alignSelf={'start'}
                     size='lg' colorScheme='green'>Rent</Checkbox>
@@ -75,7 +75,7 @@ export const HousingSidebar = () => {
                 <br />
 
 
-                <Text fontSize={20} >Filter by Housing Type</Text>
+                <Text fontSize={20} p={"5px"}>Filter by Housing Type</Text>
                 <Checkbox type='checkbox' value={"resort"} onChange={handleType} checked={type.includes("resort")}
                     size='lg' colorScheme='green' >Resort</Checkbox>
 
@@ -100,14 +100,14 @@ export const HousingSidebar = () => {
             <br />
 
             <Box border='1px' borderColor="#c4d3e8" p={"10px"}>
-                <Text fontSize={20} >Sort by Price</Text>
+                <Text fontSize={20} p={"5px"}>Sort by Price</Text>
 
-                <RadioGroup onChange={setOrder} value={order}>
-                    <Radio data-testid="sort-asc" name="sort" value={"asc"} colorScheme='green' size='lg'>Ascending</Radio>
+                <RadioGroup onChange={setOrderPrice} value={orderPrice}>
+                    <Radio data-testid="sort-asc" name="sortPrice" value={"asc"} colorScheme='green' size='lg'>Ascending</Radio>
                     <br />
                     <Radio
                         data-testid="sort-desc"
-                        name="sort"
+                        name="sortPrice"
                         value={"desc"}
                         colorScheme='green' size='lg'
                     >Descending</Radio>
@@ -115,21 +115,20 @@ export const HousingSidebar = () => {
 
 
                 <br />
-                <br />
                 {/* <div className='radiobutton'> */}
                 {/* <h2>Sort by Rating</h2> */}
-                <Text fontSize={20} >Sort by Rating</Text>
+                {/* <Text fontSize={20} p={"5px"}>Sort by Rating</Text>
                 <RadioGroup onChange={setOrder} value={order}>
-                    <Radio data-testid="sort-asc" name="sort" value={"asc"}
+                    <Radio data-testid="sort-asc" name="sortRating" value={"asc"}
                         colorScheme='green' size='lg' >Ascending</Radio>
                     <br />
                     <Radio
                         data-testid="sort-desc"
-                        name="sort"
+                        name="sortRating"
                         value={"desc"}
                         colorScheme='green' size='lg'
                     >Descending</Radio>
-                </RadioGroup>
+                </RadioGroup> */}
 
                 {/* </div> */}
             </Box>

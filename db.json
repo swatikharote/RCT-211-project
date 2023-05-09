@@ -1,750 +1,708 @@
 {
-    "destinations": [
-        {
-            "destination": "Goa",
-            "details": "Goa is a state in western India with coastlines stretching along the Arabian Sea Goa is also known for its beaches, ranging from popular stretches at Baga and",
-            "id": "11",
-            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/fc/f0/goa.jpg?w=1400&h=900&s=1"
-        },
-        {
-            "destination": "Maldives",
-            "details": "The Maldives, officially the Republic of Maldives, is an archipelagic state in South Asia, situated in the Indian Ocean. ",
-            "id": "22",
-            "image": "https://media.istockphoto.com/id/153006184/photo/maldives-villa-piles-on-water.jpg?s=612x612&w=0&k=20&c=YEwre6THY_VD_yIfHOAIBB_j-tIMYBNjMWDm5SXHIOQ="
-        },
-        {
-            "destination": "Paris",
-            "details": "Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture.",
-            "id": "33",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/1280px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg"
-        },
-        {
-            "destination": "Kashmir",
-            "details": "Jammu and Kashmir is a region administered by India as a union territory and consists of the southern portion of the larger Kashmir region,",
-            "id": "44",
-            "image": "https://gumlet.assettype.com/greaterkashmir%2F2023-01%2Ffde9c477-f71f-4d33-8a70-853f0964f225%2Fsnow.jpg?format=auto"
-        },
-        {
-            "destination": "Himachal Pradesh",
-            "details": "Himachal Pradesh is a northern Indian state in the Himalayas. It's home to scenic mountain towns and resorts such as Dalhousie.",
-            "id": "55",
-            "image": "https://static.toiimg.com/photo/93246451.cms"
-        },
-        {
-            "destination": "Ooty",
-            "details": "Ooty (short for Udhagamandalam) is a resort town in the Western Ghats mountains, in southern India's Tamil Nadu state.",
-            "id": "66",
-            "image": "https://lh5.googleusercontent.com/p/AF1QipNVl4GmhoeBkLw9kVXLPL1ddYrLh6WUNKKo96Uw=w548-h318-n-k-no"
-        },
-        {
-            "destination": "Dubai",
-            "details": "The Burj Khalifa, known as the Burj Dubai prior to its inauguration in 2010, is a skyscraper in Dubai",
-            "id": "77",
-            "image": "https://lh3.googleusercontent.com/p/AF1QipMNJJHkJLU7Ri-rUoV7OK6MKWIAEcXGQsEydLNZ=s1360-w1360-h1020"
-        },
-        {
-            "destination": "London",
-            "details": "London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times.",
-            "id": "88",
-            "image": "https://gumlet.assettype.com/greaterkashmir%2F2023-01%2Ffde9c477-f71f-4d33-8a70-853f0964f225%2Fsnow.jpg?format=auto"
-        },
-        {
-            "destination": "Fuket",
-            "details": "Phuket, a rainforested, mountainous island in the Andaman Sea, has some of Thailand’s most popular beaches",
-            "id": "99",
-            "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQNPZ-bB_6_4mMEU62hlnKU02QKslGHgwe5er5Rtqp16mb8aYy6BkHh6dPmBeUP2qkeNqDB2qqbkc_MsKhu8nZfxDancg"
-        },
-        {
-            "destination": "Kashmir",
-            "details": "Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture.",
-            "id": "1010",
-            "image": "https://gumlet.assettype.com/greaterkashmir%2F2023-01%2Ffde9c477-f71f-4d33-8a70-853f0964f225%2Fsnow.jpg?format=auto"
-        }
-    ],
-    "accommodations": [
-        {
-            "person_image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Sundar Pichai",
-            "ownerShip": "rent",
-            "id": 1,
-            "destination_id": 11,
-            "address": "123 Main Street, Mumbai",
-            "price": 2000,
-            "type": "hotel",
-            "rating": 4.5,
-            "guestAllowed": 2,
-            "amenities": [
-                "Free Wi-Fi",
-                "Swimming pool",
-                "24-hour room service",
-                "Fitness center"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Charlie",
-            "ownerShip": "owner",
-            "id": 2,
-            "destination_id": 11,
-            "address": "456 Elm Street, Jaipur",
-            "price": 2500,
-            "type": "guest house",
-            "rating": 4.0,
-            "guestAllowed": 4,
-            "amenities": [
-                "Free breakfast",
-                "Garden",
-                "Air conditioning",
-                "Free parking"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Sundar Pichai",
-            "ownerShip": "owner",
-            "id": 3,
-            "destination_id": 11,
-            "address": "789 Oak Street, Goa",
-            "price": 1200,
-            "type": "resort",
-            "rating": 4.8,
-            "guestAllowed": 3,
-            "amenities": [
-                "Private beach",
-                "Spa",
-                "Restaurant",
-                "Bar"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Charlie",
-            "ownerShip": "rent",
-            "id": 4,
-            "destination_id": 22,
-            "address": "101 Main Road, Delhi",
-            "price": 7000,
-            "type": "resort",
-            "rating": 3.5,
-            "guestAllowed": 1,
-            "amenities": [
-                "Shared kitchen",
-                "Common room",
-                "Laundry facilities",
-                "Lockers"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Charlie",
-            "ownerShip": "owner",
-            "id": 5,
-            "destination_id": 11,
-            "address": "55 Park Avenue, Bengaluru",
-            "price": 1500,
-            "type": "guest house",
-            "rating": 4.7,
-            "guestAllowed": 6,
-            "amenities": [
-                "Fully equipped kitchen",
-                "Washing machine",
-                "Balcony",
-                "Free parking"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Sundar Pichai",
-            "ownerShip": "rent",
-            "id": 6,
-            "destination_id": 22,
-            "address": "7 Hill Road, Lonavala",
-            "price": 2000,
-            "type": "Villa",
-            "rating": 4.9,
-            "guestAllowed": 8,
-            "amenities": [
-                "Private pool",
-                "Jacuzzi",
-                "BBQ grill",
-                "Garden"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/1121796/pexels-photo-1121796.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Charlie",
-            "ownerShip": "",
-            "id": 7,
-            "destination_id": 22,
-            "address": "22 Sea View Road, Mahabalipuram",
-            "price": 900,
-            "type": "guest house",
-            "rating": 4.2,
-            "guestAllowed": 2,
-            "amenities": [
-                "Beachfront location",
-                "Outdoor shower",
-                "Hammock",
-                "Restaurant"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Charlie",
-            "ownerShip": "owner",
-            "id": 9,
-            "destination_id": 33,
-            "address": "12 Lake View Road, Udaipur",
-            "price": 1800,
-            "type": "Villa",
-            "rating": 4.6,
-            "guestAllowed": 2,
-            "amenities": [
-                "Lake view",
-                "Rooftop terrace",
-                "Restaurant",
-                "Spa"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Charlie",
-            "ownerShip": "rent",
-            "id": 10,
-            "destination_id": 33,
-            "address": "33 Mountain Road, Manali",
-            "price": 1200,
-            "type": "guest house",
-            "rating": 4.3,
-            "guestAllowed": 4,
-            "amenities": [
-                "Mountain view",
-                "Fireplace",
-                "Outdoor seating",
-                "Kitchenette"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/718261/pexels-photo-718261.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Charlie",
-            "ownerShip": "owner",
-            "id": 11,
-            "destination_id": 11,
-            "address": "1 Ocean View, Kochi",
-            "price": 1000,
-            "type": "villa",
-            "rating": 4.2,
-            "guestAllowed": 2,
-            "amenities": [
-                "Free breakfast",
-                "Sea view",
-                "Garden",
-                "Free parking"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Sundar Pichai",
-            "ownerShip": "rent",
-            "id": 12,
-            "destination_id": 22,
-            "address": "2 Heritage Road, Jaisalmer",
-            "price": 1500,
-            "type": "resort",
-            "rating": 4.7,
-            "guestAllowed": 2,
-            "amenities": [
-                "Swimming pool",
-                "Restaurant",
-                "Bar",
-                "Library"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Charlie",
-            "ownerShip": "owner",
-            "id": 13,
-            "destination_id": 11,
-            "address": "3 Forest Lane, Coorg",
-            "price": 8000,
-            "type": "resort",
-            "rating": 4.1,
-            "guestAllowed": 2,
-            "amenities": [
-                "Forest view",
-                "Balcony",
-                "Outdoor seating",
-                "Coffee maker"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/1121796/pexels-photo-1121796.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "owner",
-            "ownerShip": "rent",
-            "id": 14,
-            "destination_id": 11,
-            "address": "4 Hilltop Road, Munnar",
-            "price": 1200,
-            "type": "Cottage",
-            "rating": 4.5,
-            "guestAllowed": 4,
-            "amenities": [
-                "Mountain view",
-                "Fireplace",
-                "Kitchen",
-                "Garden"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/774095/pexels-photo-774095.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Sundar Pichai",
-            "ownerShip": "owner",
-            "id": 15,
-            "destination_id": 22,
-            "address": "5 Riverfront Drive, Varanasi",
-            "price": 1700,
-            "type": "hotel",
-            "rating": 4.0,
-            "guestAllowed": 2,
-            "amenities": [
-                "River view",
-                "Sun deck",
-                "Restaurant",
-                "Bar"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/1121796/pexels-photo-1121796.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Charlie",
-            "ownerShip": "rent",
-            "id": 16,
-            "destination_id": 99,
-            "address": "6 Beach Road, Kovalam",
-            "price": 1800,
-            "type": "villa",
-            "rating": 4.9,
-            "guestAllowed": 2,
-            "amenities": [
-                "Beachfront location",
-                "Infinity pool",
-                "Spa",
-                "Restaurant"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/718261/pexels-photo-718261.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Saanvi",
-            "ownerShip": "rent",
-            "id": 17,
-            "destination_id": 33,
-            "address": "7 Tea Estate Lane, Darjeeling",
-            "price": 1000,
-            "type": "resort",
-            "rating": 4.3,
-            "guestAllowed": 2,
-            "amenities": [
-                "Tea garden view",
-                "Free breakfast",
-                "Kitchen",
-                "Garden"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/718261/pexels-photo-718261.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Saanvi",
-            "ownerShip": "rent",
-            "id": 18,
-            "destination_id": 88,
-            "address": "8 Valley View Road, Leh",
-            "price": 1500,
-            "type": "guest house",
-            "rating": 4.2,
-            "guestAllowed": 2,
-            "amenities": [
-                "Mountain view",
-                "Free breakfast",
-                "Outdoor seating",
-                "Garden"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/837306/pexels-photo-837306.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Sundar Pichai",
-            "ownerShip": "rent",
-            "id": 19,
-            "destination_id": 77,
-            "address": "9 River Road, Rishikesh",
-            "price": 800,
-            "type": "Cottage",
-            "rating": 3.9,
-            "guestAllowed": 1,
-            "amenities": [
-                "River view",
-                "Shared kitchen",
-                "Free breakfast",
-                "Free parking"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/718261/pexels-photo-718261.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Andy",
-            "ownerShip": "owner",
-            "id": 20,
-            "destination_id": 99,
-            "address": "10 Desert Road, Jodhpur",
-            "price": 1200,
-            "type": "Cottage",
-            "rating": 4.5,
-            "guestAllowed": 2,
-            "amenities": [
-                "Courtyard",
-                "Rooftop terrace",
-                "Restaurant",
-                "Free parking"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Charlie",
-            "ownerShip": "owner",
-            "id": 21,
-            "destination_id": 11,
-            "address": "11 Valley Road, Shimla",
-            "price": 9000,
-            "type": "Villa",
-            "rating": 4.1,
-            "guestAllowed": 2,
-            "amenities": [
-                "Mountain view",
-                "Balcony",
-                "Free breakfast",
-                "Garden"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/837306/pexels-photo-837306.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Andy",
-            "ownerShip": "rent",
-            "id": 22,
-            "destination_id": 66,
-            "address": "12 Fort Road, Jaisalmer",
-            "price": 1800,
-            "rating": 4.7,
-            "guestAllowed": 2,
-            "amenities": [
-                "Fort view",
-                "Swimming pool",
-                "Restaurant",
-                "Bar"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Charlie",
-            "ownerShip": "rent",
-            "id": 23,
-            "destination_id": 33,
-            "address": "13 Beachfront Drive, Goa",
-            "price": 3000,
-            "type": "guest house",
-            "rating": 4.6,
-            "guestAllowed": 2,
-            "amenities": [
-                "Beachfront location",
-                "Swimming pool",
-                "Spa",
-                "Restaurant"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/774095/pexels-photo-774095.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Andy",
-            "ownerShip": "rent",
-            "id": 24,
-            "destination_id": 77,
-            "address": "14 Jungle Trail, Bandhavgarh",
-            "price": 1000,
-            "type": "Cottage",
-            "rating": 4.4,
-            "guestAllowed": 2,
-            "amenities": [
-                "Jungle view",
-                "Wildlife safaris",
-                "Outdoor seating",
-                "Free parking"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/837306/pexels-photo-837306.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Charlie",
-            "ownerShip": "rent",
-            "id": 25,
-            "destination_id": 88,
-            "address": "15 Lakeside Drive, Nainital",
-            "price": 1200,
-            "type": "resort",
-            "rating": 4.3,
-            "guestAllowed": 2,
-            "amenities": [
-                "Lake view",
-                "Boating",
-                "Restaurant",
-                "Free parking"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Charlie",
-            "ownerShip": "owner",
-            "id": 26,
-            "destination_id": 33,
-            "address": "16 Hilltop Road, Ooty",
-            "price": 1100,
-            "type": "hotel",
-            "rating": 4.2,
-            "guestAllowed": 2,
-            "amenities": [
-                "Hill view",
-                "Outdoor seating",
-                "Free breakfast",
-                "Free parking"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/837306/pexels-photo-837306.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Andy",
-            "ownerShip": "rent",
-            "id": 27,
-            "destination_id": 77,
-            "address": "17 Riverfront Drive, Varanasi",
-            "price": 800,
-            "type": "Cottage",
-            "rating": 4.0,
-            "guestAllowed": 2,
-            "amenities": [
-                "River view",
-                "Outdoor seating",
-                "Free breakfast",
-                "Free parking"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/774095/pexels-photo-774095.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Charlie",
-            "ownerShip": "owner",
-            "id": 28,
-            "destination_id": 88,
-            "address": "18 Heritage Lane, Jaipur",
-            "price": 1300,
-            "type": "Villa",
-            "rating": 4.6,
-            "guestAllowed": 2,
-            "amenities": [
-                "Heritage property",
-                "Swimming pool",
-                "Restaurant",
-                "Bar"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/713312/pexels-photo-713312.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Charlie",
-            "ownerShip": "rent",
-            "id": 29,
-            "destination_id": 77,
-            "address": "19 Tea Estate Drive, Munnar",
-            "price": 9000,
-            "type": "Cottage",
-            "rating": 4.3,
-            "guestAllowed": 2,
-            "amenities": [
-                "Tea garden view",
-                "Outdoor seating",
-                "Free breakfast",
-                "Free parking"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/832998/pexels-photo-832998.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Charlie",
-            "ownerShip": "owner",
-            "id": 30,
-            "destination_id": 77,
-            "address": "20 Riverside Drive, Coorg",
-            "price": 1000,
-            "type": "guest house",
-            "rating": 4.5,
-            "guestAllowed": 2,
-            "amenities": [
-                "River view",
-                "Outdoor seating",
-                "Free breakfast",
-                "Free parking"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/1300402/pexels-photo-1300402.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Charlie",
-            "ownerShip": "rent",
-            "id": 31,
-            "destination_id": 66,
-            "address": "21 Hillside Drive, Darjeeling",
-            "price": 1200,
-            "type": "resort",
-            "rating": 4.7,
-            "guestAllowed": 2,
-            "amenities": [
-                "Mountain view",
-                "Outdoor seating",
-                "Free breakfast",
-                "Free parking"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Charlie",
-            "ownerShip": "rent",
-            "id": 32,
-            "destination_id": 66,
-            "address": "22 Beach Road, Goa",
-            "price": 1500,
-            "type": "Cottage",
-            "rating": 4.8,
-            "guestAllowed": 2,
-            "amenities": [
-                "Beach access",
-                "Swimming pool",
-                "Restaurant",
-                "Bar"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/713312/pexels-photo-713312.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Sandy",
-            "ownerShip": "rent",
-            "id": 33,
-            "destination_id": 44,
-            "address": "23 Lakeside Drive, Nainital",
-            "price": 2500,
-            "type": "hotel",
-            "rating": 4.5,
-            "guestAllowed": 2,
-            "amenities": [
-                "Lake view",
-                "Outdoor seating",
-                "Free breakfast",
-                "Free parking"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/1300402/pexels-photo-1300402.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Charlie",
-            "ownerShip": "rent",
-            "id": 34,
-            "destination_id": 44,
-            "address": "24 Vineyard Road, Nashik",
-            "price": 1100,
-            "type": "resort",
-            "rating": 4.3,
-            "guestAllowed": 2,
-            "amenities": [
-                "Vineyard view",
-                "Outdoor seating",
-                "Free breakfast",
-                "Free parking"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/832998/pexels-photo-832998.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Sandy",
-            "ownerShip": "owner",
-            "id": 35,
-            "destination_id": 1010,
-            "address": "25 Mountain Drive, Manali",
-            "price": 900,
-            "type": "Villa",
-            "rating": 4.2,
-            "guestAllowed": 2,
-            "amenities": [
-                "Mountain view",
-                "Outdoor seating",
-                "Free breakfast",
-                "Free parking"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/713312/pexels-photo-713312.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "",
-            "ownerShip": "rent",
-            "id": 36,
-            "destination_id": 44,
-            "address": "26 Fort Road, Jaisalmer",
-            "price": 800,
-            "type": "Cottage",
-            "rating": 4.0,
-            "guestAllowed": 2,
-            "amenities": [
-                "Fort view",
-                "Outdoor seating",
-                "Free breakfast",
-                "Free parking"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/718261/pexels-photo-718261.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Sandy",
-            "ownerShip": "rent",
-            "id": 37,
-            "destination_id": 55,
-            "address": "27 Riverfront Drive, Rishikesh",
-            "price": 1200,
-            "type": "guest house",
-            "rating": 4.6,
-            "guestAllowed": 2,
-            "amenities": [
-                "River view",
-                "Swimming pool",
-                "Restaurant",
-                "Bar"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/713312/pexels-photo-713312.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Sandy",
-            "ownerShip": "rent",
-            "id": 38,
-            "destination_id": 44,
-            "address": "28 Tea Garden Road, Darjeeling",
-            "price": 3000,
-            "type": "resort",
-            "rating": 4.7,
-            "guestAllowed": 2,
-            "amenities": [
-                "Tea garden view",
-                "Outdoor seating",
-                "Free breakfast",
-                "Free parking"
-            ]
-        },
-        {
-            "person_image": "https://images.pexels.com/photos/718261/pexels-photo-718261.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "person_name": "Sandy",
-            "ownerShip": "owner",
-            "id": 39,
-            "destination_id": 55,
-            "address": "29 City Centre, Mumbai",
-            "price": 600,
-            "type": "Villa",
-            "rating": 4.9,
-            "guestAllowed": 2,
-            "amenities": [
-                "City view",
-                "Swimming pool",
-                "Restaurant",
-                "Bar",
-                "Spa"
-            ]
-        }
-    ]
+  "destinations": [
+    {
+      "destination": "Goa",
+      "details": "Goa is a state in western India with coastlines stretching along the Arabian Sea Goa is also known for its beaches, ranging from popular stretches at Baga and",
+      "id": "11",
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/fc/f0/goa.jpg?w=1400&h=900&s=1"
+    },
+    {
+      "destination": "Maldives",
+      "details": "The Maldives, officially the Republic of Maldives, is an archipelagic state in South Asia, situated in the Indian Ocean. ",
+      "id": "22",
+      "image": "https://media.istockphoto.com/id/153006184/photo/maldives-villa-piles-on-water.jpg?s=612x612&w=0&k=20&c=YEwre6THY_VD_yIfHOAIBB_j-tIMYBNjMWDm5SXHIOQ="
+    },
+    {
+      "destination": "Paris",
+      "details": "Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture.",
+      "id": "33",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/1280px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg"
+    }
+  ],
+  "accommodations": [
+    {
+      "person_image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Sundar Pichai",
+      "ownerShip": "rent",
+      "id": 1,
+      "destination_id": 11,
+      "address": "123 Main Street, Mumbai",
+      "price": 2000,
+      "type": "hotel",
+      "rating": 4.5,
+      "guestAllowed": 2,
+      "amenities": [
+        "Free Wi-Fi",
+        "Swimming pool",
+        "24-hour room service",
+        "Fitness center"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Charlie",
+      "ownerShip": "owner",
+      "id": 2,
+      "destination_id": 11,
+      "address": "456 Elm Street, Jaipur",
+      "price": 2500,
+      "type": "guest house",
+      "rating": 4,
+      "guestAllowed": 4,
+      "amenities": [
+        "Free breakfast",
+        "Garden",
+        "Air conditioning",
+        "Free parking"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Sundar Pichai",
+      "ownerShip": "owner",
+      "id": 3,
+      "destination_id": 11,
+      "address": "789 Oak Street, Goa",
+      "price": 1200,
+      "type": "resort",
+      "rating": 4.8,
+      "guestAllowed": 3,
+      "amenities": [
+        "Private beach",
+        "Spa",
+        "Restaurant",
+        "Bar"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Charlie",
+      "ownerShip": "rent",
+      "id": 4,
+      "destination_id": 22,
+      "address": "101 Main Road, Delhi",
+      "price": 7000,
+      "type": "resort",
+      "rating": 3.5,
+      "guestAllowed": 1,
+      "amenities": [
+        "Shared kitchen",
+        "Common room",
+        "Laundry facilities",
+        "Lockers"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Charlie",
+      "ownerShip": "owner",
+      "id": 5,
+      "destination_id": 11,
+      "address": "55 Park Avenue, Bengaluru",
+      "price": 1500,
+      "type": "guest house",
+      "rating": 4.7,
+      "guestAllowed": 6,
+      "amenities": [
+        "Fully equipped kitchen",
+        "Washing machine",
+        "Balcony",
+        "Free parking"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Sundar Pichai",
+      "ownerShip": "rent",
+      "id": 6,
+      "destination_id": 22,
+      "address": "7 Hill Road, Lonavala",
+      "price": 2000,
+      "type": "Villa",
+      "rating": 4.9,
+      "guestAllowed": 8,
+      "amenities": [
+        "Private pool",
+        "Jacuzzi",
+        "BBQ grill",
+        "Garden"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/1121796/pexels-photo-1121796.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Charlie",
+      "ownerShip": "",
+      "id": 7,
+      "destination_id": 22,
+      "address": "22 Sea View Road, Mahabalipuram",
+      "price": 900,
+      "type": "guest house",
+      "rating": 4.2,
+      "guestAllowed": 2,
+      "amenities": [
+        "Beachfront location",
+        "Outdoor shower",
+        "Hammock",
+        "Restaurant"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Charlie",
+      "ownerShip": "owner",
+      "id": 9,
+      "destination_id": 33,
+      "address": "12 Lake View Road, Udaipur",
+      "price": 1800,
+      "type": "Villa",
+      "rating": 4.6,
+      "guestAllowed": 2,
+      "amenities": [
+        "Lake view",
+        "Rooftop terrace",
+        "Restaurant",
+        "Spa"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Charlie",
+      "ownerShip": "rent",
+      "id": 10,
+      "destination_id": 33,
+      "address": "33 Mountain Road, Manali",
+      "price": 1200,
+      "type": "guest house",
+      "rating": 4.3,
+      "guestAllowed": 4,
+      "amenities": [
+        "Mountain view",
+        "Fireplace",
+        "Outdoor seating",
+        "Kitchenette"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/718261/pexels-photo-718261.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Charlie",
+      "ownerShip": "owner",
+      "id": 11,
+      "destination_id": 11,
+      "address": "1 Ocean View, Kochi",
+      "price": 1000,
+      "type": "villa",
+      "rating": 4.2,
+      "guestAllowed": 2,
+      "amenities": [
+        "Free breakfast",
+        "Sea view",
+        "Garden",
+        "Free parking"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Sundar Pichai",
+      "ownerShip": "rent",
+      "id": 12,
+      "destination_id": 22,
+      "address": "2 Heritage Road, Jaisalmer",
+      "price": 1500,
+      "type": "resort",
+      "rating": 4.7,
+      "guestAllowed": 2,
+      "amenities": [
+        "Swimming pool",
+        "Restaurant",
+        "Bar",
+        "Library"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Charlie",
+      "ownerShip": "owner",
+      "id": 13,
+      "destination_id": 11,
+      "address": "3 Forest Lane, Coorg",
+      "price": 8000,
+      "type": "resort",
+      "rating": 4.1,
+      "guestAllowed": 2,
+      "amenities": [
+        "Forest view",
+        "Balcony",
+        "Outdoor seating",
+        "Coffee maker"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/1121796/pexels-photo-1121796.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "owner",
+      "ownerShip": "rent",
+      "id": 14,
+      "destination_id": 11,
+      "address": "4 Hilltop Road, Munnar",
+      "price": 1200,
+      "type": "Cottage",
+      "rating": 4.5,
+      "guestAllowed": 4,
+      "amenities": [
+        "Mountain view",
+        "Fireplace",
+        "Kitchen",
+        "Garden"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/774095/pexels-photo-774095.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Sundar Pichai",
+      "ownerShip": "owner",
+      "id": 15,
+      "destination_id": 22,
+      "address": "5 Riverfront Drive, Varanasi",
+      "price": 1700,
+      "type": "hotel",
+      "rating": 4,
+      "guestAllowed": 2,
+      "amenities": [
+        "River view",
+        "Sun deck",
+        "Restaurant",
+        "Bar"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/1121796/pexels-photo-1121796.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Charlie",
+      "ownerShip": "rent",
+      "id": 16,
+      "destination_id": 99,
+      "address": "6 Beach Road, Kovalam",
+      "price": 1800,
+      "type": "villa",
+      "rating": 4.9,
+      "guestAllowed": 2,
+      "amenities": [
+        "Beachfront location",
+        "Infinity pool",
+        "Spa",
+        "Restaurant"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/718261/pexels-photo-718261.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Saanvi",
+      "ownerShip": "rent",
+      "id": 17,
+      "destination_id": 33,
+      "address": "7 Tea Estate Lane, Darjeeling",
+      "price": 1000,
+      "type": "resort",
+      "rating": 4.3,
+      "guestAllowed": 2,
+      "amenities": [
+        "Tea garden view",
+        "Free breakfast",
+        "Kitchen",
+        "Garden"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/718261/pexels-photo-718261.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Saanvi",
+      "ownerShip": "rent",
+      "id": 18,
+      "destination_id": 88,
+      "address": "8 Valley View Road, Leh",
+      "price": 1500,
+      "type": "guest house",
+      "rating": 4.2,
+      "guestAllowed": 2,
+      "amenities": [
+        "Mountain view",
+        "Free breakfast",
+        "Outdoor seating",
+        "Garden"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/837306/pexels-photo-837306.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Sundar Pichai",
+      "ownerShip": "rent",
+      "id": 19,
+      "destination_id": 77,
+      "address": "9 River Road, Rishikesh",
+      "price": 800,
+      "type": "Cottage",
+      "rating": 3.9,
+      "guestAllowed": 1,
+      "amenities": [
+        "River view",
+        "Shared kitchen",
+        "Free breakfast",
+        "Free parking"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/718261/pexels-photo-718261.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Andy",
+      "ownerShip": "owner",
+      "id": 20,
+      "destination_id": 99,
+      "address": "10 Desert Road, Jodhpur",
+      "price": 1200,
+      "type": "Cottage",
+      "rating": 4.5,
+      "guestAllowed": 2,
+      "amenities": [
+        "Courtyard",
+        "Rooftop terrace",
+        "Restaurant",
+        "Free parking"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Charlie",
+      "ownerShip": "owner",
+      "id": 21,
+      "destination_id": 11,
+      "address": "11 Valley Road, Shimla",
+      "price": 9000,
+      "type": "Villa",
+      "rating": 4.1,
+      "guestAllowed": 2,
+      "amenities": [
+        "Mountain view",
+        "Balcony",
+        "Free breakfast",
+        "Garden"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/837306/pexels-photo-837306.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Andy",
+      "ownerShip": "rent",
+      "id": 22,
+      "destination_id": 66,
+      "address": "12 Fort Road, Jaisalmer",
+      "price": 1800,
+      "rating": 4.7,
+      "guestAllowed": 2,
+      "amenities": [
+        "Fort view",
+        "Swimming pool",
+        "Restaurant",
+        "Bar"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Charlie",
+      "ownerShip": "rent",
+      "id": 23,
+      "destination_id": 33,
+      "address": "13 Beachfront Drive, Goa",
+      "price": 3000,
+      "type": "guest house",
+      "rating": 4.6,
+      "guestAllowed": 2,
+      "amenities": [
+        "Beachfront location",
+        "Swimming pool",
+        "Spa",
+        "Restaurant"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/774095/pexels-photo-774095.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Andy",
+      "ownerShip": "rent",
+      "id": 24,
+      "destination_id": 77,
+      "address": "14 Jungle Trail, Bandhavgarh",
+      "price": 1000,
+      "type": "Cottage",
+      "rating": 4.4,
+      "guestAllowed": 2,
+      "amenities": [
+        "Jungle view",
+        "Wildlife safaris",
+        "Outdoor seating",
+        "Free parking"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/837306/pexels-photo-837306.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Charlie",
+      "ownerShip": "rent",
+      "id": 25,
+      "destination_id": 88,
+      "address": "15 Lakeside Drive, Nainital",
+      "price": 1200,
+      "type": "resort",
+      "rating": 4.3,
+      "guestAllowed": 2,
+      "amenities": [
+        "Lake view",
+        "Boating",
+        "Restaurant",
+        "Free parking"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Charlie",
+      "ownerShip": "owner",
+      "id": 26,
+      "destination_id": 33,
+      "address": "16 Hilltop Road, Ooty",
+      "price": 1100,
+      "type": "hotel",
+      "rating": 4.2,
+      "guestAllowed": 2,
+      "amenities": [
+        "Hill view",
+        "Outdoor seating",
+        "Free breakfast",
+        "Free parking"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/837306/pexels-photo-837306.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Andy",
+      "ownerShip": "rent",
+      "id": 27,
+      "destination_id": 77,
+      "address": "17 Riverfront Drive, Varanasi",
+      "price": 800,
+      "type": "Cottage",
+      "rating": 4,
+      "guestAllowed": 2,
+      "amenities": [
+        "River view",
+        "Outdoor seating",
+        "Free breakfast",
+        "Free parking"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/774095/pexels-photo-774095.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Charlie",
+      "ownerShip": "owner",
+      "id": 28,
+      "destination_id": 88,
+      "address": "18 Heritage Lane, Jaipur",
+      "price": 1300,
+      "type": "Villa",
+      "rating": 4.6,
+      "guestAllowed": 2,
+      "amenities": [
+        "Heritage property",
+        "Swimming pool",
+        "Restaurant",
+        "Bar"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/713312/pexels-photo-713312.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Charlie",
+      "ownerShip": "rent",
+      "id": 29,
+      "destination_id": 77,
+      "address": "19 Tea Estate Drive, Munnar",
+      "price": 9000,
+      "type": "Cottage",
+      "rating": 4.3,
+      "guestAllowed": 2,
+      "amenities": [
+        "Tea garden view",
+        "Outdoor seating",
+        "Free breakfast",
+        "Free parking"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/832998/pexels-photo-832998.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Charlie",
+      "ownerShip": "owner",
+      "id": 30,
+      "destination_id": 77,
+      "address": "20 Riverside Drive, Coorg",
+      "price": 1000,
+      "type": "guest house",
+      "rating": 4.5,
+      "guestAllowed": 2,
+      "amenities": [
+        "River view",
+        "Outdoor seating",
+        "Free breakfast",
+        "Free parking"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/1300402/pexels-photo-1300402.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Charlie",
+      "ownerShip": "rent",
+      "id": 31,
+      "destination_id": 66,
+      "address": "21 Hillside Drive, Darjeeling",
+      "price": 1200,
+      "type": "resort",
+      "rating": 4.7,
+      "guestAllowed": 2,
+      "amenities": [
+        "Mountain view",
+        "Outdoor seating",
+        "Free breakfast",
+        "Free parking"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Charlie",
+      "ownerShip": "rent",
+      "id": 32,
+      "destination_id": 66,
+      "address": "22 Beach Road, Goa",
+      "price": 1500,
+      "type": "Cottage",
+      "rating": 4.8,
+      "guestAllowed": 2,
+      "amenities": [
+        "Beach access",
+        "Swimming pool",
+        "Restaurant",
+        "Bar"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/713312/pexels-photo-713312.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Sandy",
+      "ownerShip": "rent",
+      "id": 33,
+      "destination_id": 44,
+      "address": "23 Lakeside Drive, Nainital",
+      "price": 2500,
+      "type": "hotel",
+      "rating": 4.5,
+      "guestAllowed": 2,
+      "amenities": [
+        "Lake view",
+        "Outdoor seating",
+        "Free breakfast",
+        "Free parking"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/1300402/pexels-photo-1300402.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Charlie",
+      "ownerShip": "rent",
+      "id": 34,
+      "destination_id": 44,
+      "address": "24 Vineyard Road, Nashik",
+      "price": 1100,
+      "type": "resort",
+      "rating": 4.3,
+      "guestAllowed": 2,
+      "amenities": [
+        "Vineyard view",
+        "Outdoor seating",
+        "Free breakfast",
+        "Free parking"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/832998/pexels-photo-832998.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Sandy",
+      "ownerShip": "owner",
+      "id": 35,
+      "destination_id": 1010,
+      "address": "25 Mountain Drive, Manali",
+      "price": 900,
+      "type": "Villa",
+      "rating": 4.2,
+      "guestAllowed": 2,
+      "amenities": [
+        "Mountain view",
+        "Outdoor seating",
+        "Free breakfast",
+        "Free parking"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/713312/pexels-photo-713312.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "",
+      "ownerShip": "rent",
+      "id": 36,
+      "destination_id": 44,
+      "address": "26 Fort Road, Jaisalmer",
+      "price": 800,
+      "type": "Cottage",
+      "rating": 4,
+      "guestAllowed": 2,
+      "amenities": [
+        "Fort view",
+        "Outdoor seating",
+        "Free breakfast",
+        "Free parking"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/718261/pexels-photo-718261.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Sandy",
+      "ownerShip": "rent",
+      "id": 37,
+      "destination_id": 55,
+      "address": "27 Riverfront Drive, Rishikesh",
+      "price": 1200,
+      "type": "guest house",
+      "rating": 4.6,
+      "guestAllowed": 2,
+      "amenities": [
+        "River view",
+        "Swimming pool",
+        "Restaurant",
+        "Bar"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/713312/pexels-photo-713312.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Sandy",
+      "ownerShip": "rent",
+      "id": 38,
+      "destination_id": 44,
+      "address": "28 Tea Garden Road, Darjeeling",
+      "price": 3000,
+      "type": "resort",
+      "rating": 4.7,
+      "guestAllowed": 2,
+      "amenities": [
+        "Tea garden view",
+        "Outdoor seating",
+        "Free breakfast",
+        "Free parking"
+      ]
+    },
+    {
+      "person_image": "https://images.pexels.com/photos/718261/pexels-photo-718261.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "person_name": "Sandy",
+      "ownerShip": "owner",
+      "id": 39,
+      "destination_id": 55,
+      "address": "29 City Centre, Mumbai",
+      "price": 600,
+      "type": "Villa",
+      "rating": 4.9,
+      "guestAllowed": 2,
+      "amenities": [
+        "City view",
+        "Swimming pool",
+        "Restaurant",
+        "Bar",
+        "Spa"
+      ]
+    }
+  ]
 }
