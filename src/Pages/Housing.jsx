@@ -22,8 +22,8 @@ const Housing = () => {
       type: searchParams.getAll("type"),
       _sort: searchParams.get("orderPrice") && "price",
       _order: searchParams.get("orderPrice"),
-      _sort: searchParams.get("orderRating") && "rating",
-      _order: searchParams.get("orderRating")
+      // _sort: searchParams.get("orderRating") && "rating",
+      // _order: searchParams.get("orderRating")
     }
   }
 

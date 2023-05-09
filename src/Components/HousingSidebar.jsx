@@ -21,7 +21,7 @@ export const HousingSidebar = () => {
             ownerShip: ownerShip,
             type: type,
         }
-        orderPrice && (params.orderPrice = orderPrice);
+        orderPrice && (params.orderPrice = orderPrice)
         orderRating && (params.orderRating = orderRating)
         setSearchParam(params)
     }, [ownerShip, type, orderPrice, orderRating])
@@ -53,17 +53,6 @@ export const HousingSidebar = () => {
         setType(newType)
 
 
-    }
-    const handleSortPrice = (e) => {
-        const { value } = e.target
-        setOrderPrice(value)
-        // console.log(order)
-    }
-
-    const handleSortRating = (e) => {
-        const { value } = e.target
-        setOrderRating(value)
-        // console.log(order)
     }
 
     return (
@@ -111,7 +100,7 @@ export const HousingSidebar = () => {
             <Box border='1px' borderColor="#c4d3e8" p={"10px"}>
                 <Text fontSize={20} p={"5px"}>Sort by Price</Text>
 
-                <RadioGroup onChange={handleSortPrice} value={orderPrice}>
+                <RadioGroup onChange={setOrderPrice} value={orderPrice}>
                     <Radio data-testid="sort-asc" name="sortPrice" value={"asc"} colorScheme='green' size='lg'>Ascending</Radio>
                     <br />
                     <Radio

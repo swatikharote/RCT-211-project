@@ -19,7 +19,6 @@ const DestinationList = () => {
   useEffect(() => {
     dispatch(getDestination(limit))
 
-
   }, [])
 
 
