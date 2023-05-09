@@ -4,13 +4,14 @@ import { getDestination, deleteDestination } from '../Redux/productReducer/actio
 import { Box, Button, Flex, Text } from '@chakra-ui/react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import AdminSideBar from '../Components/AdminSideBar'
 
 const AdminDestination = () => {
     const data = useSelector((store) => store.productReducer.products);
     const loading = useSelector((store) => store.productReducer.isLoading);
     const dispatch = useDispatch()
 
-    let limit = 10;
+    let limit = 11;
 
 
 
@@ -31,11 +32,11 @@ const AdminDestination = () => {
     }
 
     return (
-        <Box w={"98%"} m={"auto"}>
-            <Box >
-                {/* <SearchBar /> */}
+        <Flex justifyContent={'space-between'} w={"98%"} m={"auto"}>
+            <Box width={'20%'}>
+               <AdminSideBar/>
             </Box>
-            <Box > <DIV>
+            <Box width={'80%'}> <DIV>
 
 
                 {data.map((e) => {
@@ -66,7 +67,7 @@ const AdminDestination = () => {
                 })}
 
             </DIV></Box>
-        </Box>
+        </Flex>
     )
 }
 
