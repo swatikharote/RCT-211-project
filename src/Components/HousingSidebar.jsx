@@ -13,15 +13,18 @@ export const HousingSidebar = () => {
     // sort
     const initSort = searchParams.get("orderPrice")
     const [orderPrice, setOrderPrice] = useState(initSort || "")
+    const initRate = searchParams.get("orderRating")
+    const [orderRating, setOrderRating] = useState(initRate || "")
 
     useEffect(() => {
         let params = {
             ownerShip: ownerShip,
             type: type,
         }
-        orderPrice && (params.orderPrice = orderPrice)
+        orderPrice && (params.orderPrice = orderPrice);
+        orderRating && (params.orderRating = orderRating)
         setSearchParam(params)
-    }, [ownerShip, type, orderPrice])
+    }, [ownerShip, type, orderPrice, orderRating])
 
     // console.log(Ownership)
     const handleOwnerShip = (e) => {
@@ -54,6 +57,12 @@ export const HousingSidebar = () => {
     const handleSortPrice = (e) => {
         const { value } = e.target
         setOrderPrice(value)
+        // console.log(order)
+    }
+
+    const handleSortRating = (e) => {
+        const { value } = e.target
+        setOrderRating(value)
         // console.log(order)
     }
 
@@ -102,7 +111,7 @@ export const HousingSidebar = () => {
             <Box border='1px' borderColor="#c4d3e8" p={"10px"}>
                 <Text fontSize={20} p={"5px"}>Sort by Price</Text>
 
-                <RadioGroup onChange={setOrderPrice} value={orderPrice}>
+                <RadioGroup onChange={handleSortPrice} value={orderPrice}>
                     <Radio data-testid="sort-asc" name="sortPrice" value={"asc"} colorScheme='green' size='lg'>Ascending</Radio>
                     <br />
                     <Radio
@@ -115,22 +124,22 @@ export const HousingSidebar = () => {
 
 
                 <br />
-                {/* <div className='radiobutton'> */}
-                {/* <h2>Sort by Rating</h2> */}
-                {/* <Text fontSize={20} p={"5px"}>Sort by Rating</Text>
-                <RadioGroup onChange={setOrder} value={order}>
-                    <Radio data-testid="sort-asc" name="sortRating" value={"asc"}
-                        colorScheme='green' size='lg' >Ascending</Radio>
-                    <br />
-                    <Radio
-                        data-testid="sort-desc"
-                        name="sortRating"
-                        value={"desc"}
-                        colorScheme='green' size='lg'
-                    >Descending</Radio>
-                </RadioGroup> */}
+                <div className='radiobutton'>
+                    <h2>Sort by Rating</h2>
+                    <Text fontSize={20} p={"5px"}>Sort by Rating</Text>
+                    <RadioGroup onChange={setOrderRating} value={orderRating}>
+                        <Radio data-testid="sort-asc" name="sortRating" value={"asc"}
+                            colorScheme='green' size='lg' >Ascending</Radio>
+                        <br />
+                        <Radio
+                            data-testid="sort-desc"
+                            name="sortRating"
+                            value={"desc"}
+                            colorScheme='green' size='lg'
+                        >Descending</Radio>
+                    </RadioGroup>
 
-                {/* </div> */}
+                </div>
             </Box>
 
 
