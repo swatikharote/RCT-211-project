@@ -61,6 +61,9 @@ export const Footer = () => {
             <a href="#"><span> Privacy Policy | Terms & Conditions</span></a>
             
         </div>
+        <div>
+            <Link style={{textDecoration:'none'}} to='/admin-destination'>Admin </Link>
+        </div>
             </div>
       
         </div>
@@ -187,6 +190,9 @@ p{
   background-color: #8EC3B0;
   width: 88%;
   margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   
 }
