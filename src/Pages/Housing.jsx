@@ -20,10 +20,10 @@ const Housing = () => {
     params: {
       ownerShip: searchParams.getAll("ownerShip"),
       type: searchParams.getAll("type"),
-      _sort: searchParams.get("order") && "price",
-      _order: searchParams.get("order"),
-      _sort: searchParams.get("order") && "rating",
-      _order: searchParams.get("order")
+      _sort: searchParams.get("orderPrice") && "price",
+      _order: searchParams.get("orderPrice"),
+      // _sort: searchParams.get("order") && "rating",
+      // _order: searchParams.get("order")
     }
   }
 

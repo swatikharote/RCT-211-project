@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { getDestination } from '../Redux/productReducer/action';
+import { getDestination, deleteDestination } from '../Redux/productReducer/action';
 import { Box, Button, Flex, Text } from '@chakra-ui/react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
@@ -19,13 +19,16 @@ const AdminDestination = () => {
 
     useEffect(() => {
         dispatch(getDestination(limit))
-
     }, [])
 
+    const deleteDes = (id) => {
+        dispatch(deleteDestination(id))
+        dispatch(getDestination(limit))
+    }
 
-if(loading){
-    return <h1 style={{fontSize:'40px', textAlign:'center' , marginTop: '20px'}}>Loading...</h1>
-}
+    if (loading) {
+        return <h1 style={{ fontSize: '40px', textAlign: 'center', marginTop: '20px' }}>Loading...</h1>
+    }
 
     return (
         <Box w={"98%"} m={"auto"}>
@@ -38,23 +41,23 @@ if(loading){
                 {data.map((e) => {
                     return (
                         <div key={e.id}>
-                            <img src={e.image} alt={e.destination}/>
+                            <img src={e.image} alt={e.destination} />
                             <Text position={'absolute'}
-                 top={'22px'}
-                 left={'25px'}
-                 color={'#3A5BA0'}
-                 bg={'whitesmoke'}
-                 p={'3px'}
-                 pl={'5px'}
-                 pr={'5px'}
-                 borderRadius={'10px'}
-                 as={'b'} >{e.destination}</Text>
+                                top={'22px'}
+                                left={'25px'}
+                                color={'#3A5BA0'}
+                                bg={'whitesmoke'}
+                                p={'3px'}
+                                pl={'5px'}
+                                pr={'5px'}
+                                borderRadius={'10px'}
+                                as={'b'} >{e.destination}</Text>
                             <p>{e.details}</p>
                             <Flex justifyContent={'space-between'}>
-                                <Button _hover={{bg:'green.400'}}>
+                                <Button _hover={{ bg: 'green.400' }}>
                                     <Link to={`/edit/${e.id}`}>Edit</Link>
-                                    </Button>
-                                <Button _hover={{bg:'red'}}>Delete</Button>
+                                </Button>
+                                <Button onClick={() => deleteDes(e.id)} _hover={{ bg: 'red' }}>Delete</Button>
                             </Flex>
 
                         </div>

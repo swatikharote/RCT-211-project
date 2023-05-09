@@ -6,12 +6,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { DestinationCard } from './DestinationCard';
 import styled from "styled-components";
 import { ButtonComp } from './Button';
+import { Box, Text } from '@chakra-ui/react';
 
 const DestinationList = () => {
   const data = useSelector((store) => store.productReducer.products);
-  
+
   const dispatch = useDispatch()
- 
+
   let limit = 6;
 
 
@@ -24,7 +25,11 @@ const DestinationList = () => {
 
 
   return (
-    <>
+    <div>
+      <Box bg='#c4d3e8' width={'98%'} margin={'auto'}>
+        <Text color={'red'} fontSize={"25px"} ml='3px' mt={"20px"} fontFamily={'monospace'} >Popular Destination</Text>
+      </Box>
+
       <DIV>
         {data?.map((item) => {
           return <DestinationCard key={item.id} {...item} />
@@ -34,7 +39,7 @@ const DestinationList = () => {
       </DIV>
 
 
-    </>
+    </div>
   )
 }
 
