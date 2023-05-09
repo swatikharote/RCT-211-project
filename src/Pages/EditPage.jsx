@@ -28,6 +28,7 @@ const EditPage = () => {
   const handleEdit=()=>{
     const data={destination:destination, image:image, details:details}
     dispatch(editDestination(id, data))
+    alert('Destination Updated')
   }
 
   return (

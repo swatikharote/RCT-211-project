@@ -25,6 +25,7 @@ const AdminDestination = () => {
     const deleteDes = (id) => {
         dispatch(deleteDestination(id))
         dispatch(getDestination(limit))
+        alert('Destination Deleted')
     }
 
     if (loading) {
