@@ -6,7 +6,7 @@ Wasteful-chin-4969
 website link : https://645a92e97a9c9f16ff581fa5--inquisitive-mandazi-53a20e.netlify.app/
 
 Team Members :-
-1. Swati Kharote
+1. Swati Kharote (Team-Lead)
 2. Roushan Kumar
 
 The tech Stack:-
