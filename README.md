@@ -3,7 +3,7 @@ Wasteful-chin-4969
 
 ![safe_travel_logo](https://github.com/swatikharote/wasteful-chin-4969/assets/112754591/dacad242-2f86-470b-a5d3-d042e94e8c3e)
 
-website link : https://645a92e97a9c9f16ff581fa5--inquisitive-mandazi-53a20e.netlify.app/
+website link : https://vocal-palmier-6e99e3.netlify.app/
 
 Team Members :-
 1. Swati Kharote (Team-Lead)
