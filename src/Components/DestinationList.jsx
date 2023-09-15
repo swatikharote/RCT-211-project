@@ -13,7 +13,7 @@ const DestinationList = () => {
 
   const dispatch = useDispatch()
 
-  let limit = 6;
+  let limit = 6
 
 
   useEffect(() => {

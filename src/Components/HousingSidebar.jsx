@@ -62,11 +62,14 @@ export const HousingSidebar = () => {
 
                 <Text fontSize={20} p={"5px"}>Filter by Ownership</Text>
 
-                <Checkbox type='checkbox' value={"rent"} onChange={handleOwnerShip} checked={ownerShip.includes("rent")} alignSelf={'start'}
+                <Checkbox type='checkbox' value={"rent"}
+                    onChange={handleOwnerShip} checked={ownerShip.includes("rent")}
+                    alignSelf={'start'}
                     size='lg' colorScheme='green'>Rent</Checkbox>
 
                 <br />
-                <Checkbox type='checkbox' value={"owner"} onChange={handleOwnerShip} checked={ownerShip.includes("owner")}
+                <Checkbox type='checkbox' value={"owner"} onChange={handleOwnerShip}
+                    checked={ownerShip.includes("owner")}
                     size='lg' colorScheme='green' >Owner</Checkbox>
 
                 <br />
