@@ -117,7 +117,7 @@ export const HousingSidebar = () => {
 
                 <br />
                 <div className='radiobutton'>
-                    <h2>Sort by Rating</h2>
+                    
                     <Text fontSize={20} p={"5px"}>Sort by Rating</Text>
                     <RadioGroup onChange={setOrderRating} value={orderRating}>
                         <Radio data-testid="sort-asc" name="sortRating" value={"asc"}

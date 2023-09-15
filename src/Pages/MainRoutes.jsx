@@ -15,6 +15,7 @@ import AddProduct from './AddProduct';
 import { Destination } from './Destination'
 import AdminDestination from './AdminDestination'
 import EditPage from './EditPage'
+import NotFoundPage from './NotFoundPage'
 
 
 const MainRoutes = () => {
@@ -38,7 +39,7 @@ const MainRoutes = () => {
 
                 <Route path='/admin-destination' element={<AdminDestination/>}/>
                 <Route path='/edit/:id' element={<EditPage/>}/>
-                <Route path='*' element={<h1>Page Not Found</h1>}/>
+                <Route path='*' element={<NotFoundPage/>}/>
 
             </Routes>
         </div>
