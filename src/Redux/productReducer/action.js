@@ -1,8 +1,9 @@
 import axios from "axios";
 import { GET_PRODUCT_SUCCESS, PATCH_PRODUCT_SUCCESS, POST_PRODUCT_SUCCESS, PRODUCT_FAILURE, PRODUCT_REQUEST } from "./actionType";
 
-const baseURL = "https://vast-gray-seal-cuff.cyclic.app" // server
+const baseURL = "https://safe-vr28.onrender.com/" // server
 // const baseURL = "http://localhost:8080" // local
+//https://vast-gray-seal-cuff.cyclic.app
 
 export const getDestination = (limit, paramObj) => (dispatch) => {
     dispatch({ type: PRODUCT_REQUEST })
