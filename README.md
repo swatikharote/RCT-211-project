@@ -1,4 +1,5 @@
-Wasteful-chin-4969
+Project Name :=> Safe Travel 
+Developed Safe-Travel website in 5 days ,from where we can see the Destinations and book hotels,home for stay with affordable price.
 
 <img width="583" alt="image" src="https://github.com/swatikharote/Safe-Travel/assets/112754591/ec942ba9-eb75-4738-9753-99c73df5b593">
 
