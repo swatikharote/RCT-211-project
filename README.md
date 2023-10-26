@@ -1,7 +1,12 @@
 Wasteful-chin-4969
 
+<img width="583" alt="image" src="https://github.com/swatikharote/Safe-Travel/assets/112754591/ec942ba9-eb75-4738-9753-99c73df5b593">
 
-![safe_travel_logo](https://github.com/swatikharote/wasteful-chin-4969/assets/112754591/dacad242-2f86-470b-a5d3-d042e94e8c3e)
+
+
+
+<img width="941" alt="image" src="https://github.com/swatikharote/Safe-Travel/assets/112754591/f0c09ea4-7bf6-4d0f-b78d-77c557a3ee10">
+
 
 website link : https://vocal-palmier-6e99e3.netlify.app/
 
